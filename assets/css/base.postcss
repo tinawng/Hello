@@ -21,8 +21,38 @@ h1 {
   letter-spacing: 0.5rem
 }
 h2 {
-  @apply text-sm
-  /* font-family: "montserrat-light"; */
+  @apply text-3xl;
+  font-family: "spacemono-regular";
+}
+h3 {
+  @apply text-steel-700;
+  font-family: "spacemono-bolditalic";
+}
+h4 {
+  @apply text-sm;
+}
+h5 {
+  @apply text-xs;
+  font-family: "montserrat-regular";
+}
+h6 {
+  @apply text-xxxs;
+  font-family: "montserrat-italic";
+}
+
+p {
+  @apply mb-1;
+}
+
+a {
+  @apply w-max pb-1;
+  @apply border-b border-black;
+  transition: all 0.2s;
+}
+a:hover {
+  @apply pb-0;
+  @apply text-steel-700 border-transparent;
+  background: #F2CC89AA;
 }
 
 .flex-center-x {
@@ -53,6 +83,14 @@ h2 {
   font-family: "spacemono-italic";
   src: url("../../static/fonts/spacemono/spacemono-italic.woff");
 }
+@font-face {
+  font-family: "spacemono-bolditalic";
+  src: url("../../static/fonts/spacemono/spacemono-bolditalic.woff");
+}
+@font-face {
+  font-family: "spacemono-bold";
+  src: url("../../static/fonts/spacemono/spacemono-bold.woff");
+}
 
 @font-face {
   font-family: "montserrat-regular";
@@ -77,6 +115,10 @@ h2 {
 @font-face {
   font-family: "montserrat-thin";
   src: url("../../static/fonts/montserrat/montserrat-thin.ttf");
+}
+@font-face {
+  font-family: "montserrat-italic";
+  src: url("../../static/fonts/montserrat/montserrat-italic.ttf");
 }
 
 @font-face {

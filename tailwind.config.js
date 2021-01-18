@@ -29,6 +29,10 @@ module.exports = {
           '900': '#403037',
         },
       },
+      fontSize: {
+        'xxxs': '.6rem',
+        'xxs': '.7rem'
+      },
       minWidth: {
         'screen': '100vw'
       },

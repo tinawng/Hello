@@ -8,7 +8,7 @@
       />
       <div class="text-left text-steel-900">
         <h1>Tina Wang</h1>
-        <h2>projects bookmarks</h2>
+        <h4>projects bookmarks</h4>
       </div>
       <svg class="h-6 ml-auto" viewBox="0 0 24 24">
         <path
@@ -17,8 +17,9 @@
         />
       </svg>
     </section>
-    <section>
+    <section class="mt-24 flex justify-between">
       <project-card />
+      <project-card class="mt-48" />
     </section>
   </div>
 </template>
