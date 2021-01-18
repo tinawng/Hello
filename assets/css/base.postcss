@@ -1,0 +1,101 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  font-family: "spacemono-regular";
+  font-size: 18px;
+  @apply text-steel-900;
+  
+  box-sizing: border-box;
+
+  background: #ECE9E6;
+  background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);
+  background: linear-gradient(to left, #FFFFFF, #ECE9E6);
+}
+
+h1 {
+  @apply text-4xl;
+  font-family: "montserrat-regular";
+  letter-spacing: 0.5rem
+}
+h2 {
+  @apply text-sm
+  /* font-family: "montserrat-light"; */
+}
+
+.flex-center-x {
+  @apply flex justify-center;
+}
+.flex-vertical-center-x {
+  @apply flex flex-col items-center;
+}
+.flex-center-y {
+  @apply flex items-center;
+}
+.flex-vertical-center-y {
+  @apply flex flex-col justify-center;
+}
+.flex-center {
+  @apply flex-center-x flex-center-y;
+}
+.flex-vertical-center {
+  @apply flex-vertical-center-x flex-vertical-center-y;
+}
+
+/* 🍱 Refs fonts */
+@font-face {
+  font-family: "spacemono-regular";
+  src: url("../../static/fonts/spacemono/spacemono-regular.woff");
+}
+@font-face {
+  font-family: "spacemono-italic";
+  src: url("../../static/fonts/spacemono/spacemono-italic.woff");
+}
+
+@font-face {
+  font-family: "montserrat-regular";
+  src: url("../../static/fonts/montserrat/montserrat-regular.woff");
+}
+@font-face {
+  font-family: "montserrat-semibold";
+  src: url("../../static/fonts/montserrat/montserrat-semibold.woff");
+}
+@font-face {
+  font-family: "montserrat-bold";
+  src: url("../../static/fonts/montserrat/montserrat-bold.ttf");
+}
+@font-face {
+  font-family: "montserrat-light";
+  src: url("../../static/fonts/montserrat/montserrat-light.ttf");
+}
+@font-face {
+  font-family: "montserrat-medium";
+  src: url("../../static/fonts/montserrat/montserrat-medium.ttf");
+}
+@font-face {
+  font-family: "montserrat-thin";
+  src: url("../../static/fonts/montserrat/montserrat-thin.ttf");
+}
+
+@font-face {
+  font-family: "quicksand-bold";
+  src: url("../../static/fonts/quicksand/quicksand-bold.ttf");
+}
+@font-face {
+  font-family: "quicksand-light";
+  src: url("../../static/fonts/quicksand/quicksand-light.ttf");
+}
+@font-face {
+  font-family: "quicksand-medium";
+  src: url("../../static/fonts/quicksand/quicksand-medium.ttf");
+}
+@font-face {
+  font-family: "quicksand-regular";
+  src: url("../../static/fonts/quicksand/quicksand-regular.ttf");
+}
+@font-face {
+  font-family: "quicksand-semibold";
+  src: url("../../static/fonts/quicksand/quicksand-semibold.ttf");
+}
