@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         steel: {
-          '50':  '#f8fafa',
+          '50': '#f8fafa',
           '100': '#f2f6f7',
           '200': '#e1e9ed',
           '300': '#cbd4e1',
@@ -17,7 +17,7 @@ module.exports = {
           '900': '#282e3f',
         },
         beaver: {
-          '50':  '#f7f7f6',
+          '50': '#f7f7f6',
           '100': '#f3f2ef',
           '200': '#ece9e6',
           '300': '#d8cfc7',
@@ -45,6 +45,9 @@ module.exports = {
     }),
   },
   variants: {
+    extend: {
+      width: ['group-hover'],
+    }
   },
   plugins: [],
 }
