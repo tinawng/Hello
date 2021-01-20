@@ -56,7 +56,7 @@
           ><a class="ml-6" href="http://grapes.tina.cafe/">Live Demo</a>
         </template>
       </project-card>
-      <project-card id="c3" class="-mt-24" icon="dango" color="F76184">
+      <project-card id="c3" class="" icon="dango" color="F76184">
         <template v-slot:stack
           >Server Side Rendered Website ~ Fullstack</template
         >
@@ -78,7 +78,48 @@
           <a class="ml-6" href="http://dango.tina.cafe/">Live Demo</a>
         </template>
       </project-card>
-      <project-card id="c4" class="mt-24" icon="bookmark" color="f2cc89">
+      <project-card id="c4" class="mt-48" icon="bookmark" color="f2cc89">
+        <template v-slot:stack
+          >Server Side Rendered Website ~ Fullstack</template
+        >
+        <template v-slot:name>Bookmarks</template>
+        <template v-slot:description>
+          <p>Multipurpose rest api built with Fastify based on NodeJS</p>
+          <p>
+            Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has
+            stationes appulit navem, sed ut Scironis praerupta letalia
+            declinantes litoribus Cypriis contigui navigabant, quae Isauriae
+            scopulis sunt controversa.
+          </p>
+        </template>
+        <template v-slot:links
+          ><a href="https://github.com/tinawng/bookmarks">GitHub Repo</a>
+          <a class="ml-6" href="http://bookmarks.tina.cafe/">Live Demo</a>
+        </template>
+      </project-card>
+      <project-card id="c5" class="" icon="dango" color="F76184">
+        <template v-slot:stack
+          >Server Side Rendered Website ~ Fullstack</template
+        >
+        <template v-slot:name>Dango</template>
+        <template v-slot:definition>
+          A Japanese sweet dumpling made from rice flour and served on a skewer.
+        </template>
+        <template v-slot:description>
+          <p>Multipurpose rest api built with Fastify based on NodeJS</p>
+          <p>
+            Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has
+            stationes appulit navem, sed ut Scironis praerupta letalia
+            declinantes litoribus Cypriis contigui navigabant, quae Isauriae
+            scopulis sunt controversa.
+          </p>
+        </template>
+        <template v-slot:links
+          ><a href="https://github.com/tinawng/dango">GitHub Repo</a>
+          <a class="ml-6" href="http://dango.tina.cafe/">Live Demo</a>
+        </template>
+      </project-card>
+      <project-card id="c6" class="mt-48" icon="bookmark" color="f2cc89">
         <template v-slot:stack
           >Server Side Rendered Website ~ Fullstack</template
         >
@@ -140,6 +181,9 @@ export default {
       addFadeOut("#c1");
       addFadeOut("#c2");
       addFadeOut("#c3");
+      addFadeOut("#c4");
+      addFadeOut("#c5");
+      addFadeOut("#c6");
     }
   },
 };
