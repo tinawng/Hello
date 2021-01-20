@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="h-screen pb-8 flex items-end">
+    <section id="title" class="h-screen pb-8 flex items-end">
       <img
         class="h-16 mr-6"
         src="~/assets/images/bookmark_y.png"
@@ -17,46 +17,55 @@
         />
       </svg>
     </section>
-    <section class="mt-24 flex justify-between">
-      <project-card />
-      <project-card class="mt-48" />
-      <project-card />
-      <project-card />
-      <project-card />
-      <project-card />
+    <section class="mt-24 flex flex-wrap justify-between">
+      <project-card id="c1" />
+      <project-card id="c2" class="mt-48" />
+      <project-card id="c3" class="-mt-24" />
+      <project-card id="c4" class="mt-24" />
     </section>
   </div>
 </template>
 
 <script>
 export default {
-  created() {},
   mounted() {
-    // window.requestAnimationFrame(this.UpdateLax);
-
     if (process.client) {
-      this.$lax.init();
-      // Add a driver that we use to control our animations
-      this.$lax.addDriver("scrollY", function () {
-        return window.scrollY;
-      });
-
-      // Add animation bindings to elements
-      this.$lax.addElements(".card-container", {
+      this.$lax.addElements("#title", {
         scrollY: {
           opacity: [
-            ['screenHeight*0.3', 0],
-            [0, 1],
+            ["screenHeight * 0.7", "screenHeight * 0.9"],
+            [1, 0],
           ],
         },
       });
+
+      var addFadeOut = (selector) => {
+        var self = this;
+
+        // ⚡️ Add listener only when element is visible on screen
+        this.$intersectionHelper.addTrigger(
+          selector,
+          () => {
+            self.$lax.addElements(selector, {
+              scrollY: {
+                opacity: [
+                  [
+                    window.scrollY + "+ screenHeight",
+                    window.scrollY + "+ screenHeight * 1.2",
+                  ],
+                  [1, 0],
+                ],
+              },
+            });
+          },
+          0
+        );
+      };
+
+      addFadeOut("#c1");
+      addFadeOut("#c2");
+      addFadeOut("#c3");
     }
-  },
-  methods: {
-    UpdateLax() {
-      // this.$lax.update(window.scrollY);
-      // window.requestAnimationFrame(this.UpdateLax);
-    },
   },
 };
 </script>
