@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section id="title" class="h-screen pb-8 flex items-end">
+    <section id="title" class="h-screen pb-12 flex items-end">
       <img
         class="h-16 mr-6"
         src="~/assets/images/bookmark_y.png"
@@ -17,7 +17,7 @@
         />
       </svg>
     </section>
-    <section class="mt-24 flex flex-wrap justify-between">
+    <section class="mt-12 flex flex-wrap justify-between">
       <project-card id="c1" />
       <project-card id="c2" class="mt-48" />
       <project-card id="c3" class="-mt-24" />
