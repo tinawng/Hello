@@ -33,7 +33,7 @@ export default {
       this.$lax.addElements("#title", {
         scrollY: {
           opacity: [
-            ["screenHeight * 0.7", "screenHeight * 0.9"],
+            ["screenHeight * 0.75", "screenHeight * 0.9"],
             [1, 0],
           ],
         },
