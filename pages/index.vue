@@ -17,11 +17,86 @@
         />
       </svg>
     </section>
-    <section class="mt-12 flex flex-wrap justify-between">
-      <project-card id="c1" />
-      <project-card id="c2" class="mt-48" />
-      <project-card id="c3" class="-mt-24" />
-      <project-card id="c4" class="mt-24" />
+    <section class="my-12 flex flex-wrap justify-between">
+      <project-card id="c1" icon="tanabata" color="79DB75">
+        <template v-slot:stack>REST API ~ Backend</template>
+        <template v-slot:name>Tanabata</template>
+        <template v-slot:definition>
+          A Tanabata tree, a type of wish tree on which people hang wishes
+          written on paper and other decorations during Tanabata, a Japanese
+          festival.
+        </template>
+        <template v-slot:description>
+          <p>Multipurpose rest api built with Fastify based on NodeJS</p>
+          <p>
+            Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has
+            stationes appulit navem, sed ut Scironis praerupta letalia
+            declinantes litoribus Cypriis contigui navigabant, quae Isauriae
+            scopulis sunt controversa.
+          </p>
+        </template>
+        <template v-slot:links
+          ><a href="https://github.com/tinawng/tanabata">GitHub Repo</a>
+        </template>
+      </project-card>
+      <project-card id="c2" class="mt-48" icon="grapes" color="5C2A92">
+        <template v-slot:stack>Static Website ~ Frontend</template>
+        <template v-slot:name>Grapes</template>
+        <template v-slot:description>
+          <p>Multipurpose rest api built with Fastify based on NodeJS</p>
+          <p>
+            Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has
+            stationes appulit navem, sed ut Scironis praerupta letalia
+            declinantes litoribus Cypriis contigui navigabant, quae Isauriae
+            scopulis sunt controversa.
+          </p>
+        </template>
+        <template v-slot:links
+          ><a href="https://github.com/tinawng/grapes">GitHub Repo</a
+          ><a class="ml-6" href="http://grapes.tina.cafe/">Live Demo</a>
+        </template>
+      </project-card>
+      <project-card id="c3" class="-mt-24" icon="dango" color="F76184">
+        <template v-slot:stack
+          >Server Side Rendered Website ~ Fullstack</template
+        >
+        <template v-slot:name>Dango</template>
+        <template v-slot:definition>
+          A Japanese sweet dumpling made from rice flour and served on a skewer.
+        </template>
+        <template v-slot:description>
+          <p>Multipurpose rest api built with Fastify based on NodeJS</p>
+          <p>
+            Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has
+            stationes appulit navem, sed ut Scironis praerupta letalia
+            declinantes litoribus Cypriis contigui navigabant, quae Isauriae
+            scopulis sunt controversa.
+          </p>
+        </template>
+        <template v-slot:links
+          ><a href="https://github.com/tinawng/dango">GitHub Repo</a>
+          <a class="ml-6" href="http://dango.tina.cafe/">Live Demo</a>
+        </template>
+      </project-card>
+      <project-card id="c4" class="mt-24" icon="bookmark" color="f2cc89">
+        <template v-slot:stack
+          >Server Side Rendered Website ~ Fullstack</template
+        >
+        <template v-slot:name>Bookmarks</template>
+        <template v-slot:description>
+          <p>Multipurpose rest api built with Fastify based on NodeJS</p>
+          <p>
+            Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has
+            stationes appulit navem, sed ut Scironis praerupta letalia
+            declinantes litoribus Cypriis contigui navigabant, quae Isauriae
+            scopulis sunt controversa.
+          </p>
+        </template>
+        <template v-slot:links
+          ><a href="https://github.com/tinawng/bookmarks">GitHub Repo</a>
+          <a class="ml-6" href="http://bookmarks.tina.cafe/">Live Demo</a>
+        </template>
+      </project-card>
     </section>
   </div>
 </template>
