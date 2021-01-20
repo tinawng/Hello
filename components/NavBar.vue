@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-container flex-center-y justify-end">
+  <div class="z-50 nav-container flex-center-y justify-end">
     <transition name="slide-fade">
       <div v-if="show_nav" class="w-1/3 flex justify-between mr-16">
         <h4></h4>
@@ -31,7 +31,7 @@ export default {
 
 <style lang="postcss" scoped>
 .nav-container {
-  @apply absolute top-0;
+  @apply fixed top-0;
   @apply h-32;
   width: inherit;
 }
@@ -48,11 +48,13 @@ export default {
   transition-property: margin, width, opacity;
 }
 
-.slide-fade-enter-active, .slide-fade-leave-active {
+.slide-fade-enter-active,
+.slide-fade-leave-active {
   transition: all 0.4s;
   transition-property: transform, opacity;
 }
-.slide-fade-enter, .slide-fade-leave-to {
+.slide-fade-enter,
+.slide-fade-leave-to {
   transform: translateY(5px);
   opacity: 0;
 }
