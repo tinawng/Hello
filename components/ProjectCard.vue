@@ -1,22 +1,18 @@
 <template>
   <div class="card-container">
-    <div
-      class="thumbnail flex-center"
-      ,
-      :style="'background: #' + color + '99'"
-    >
+    <div class="thumbnail flex-center" :style="'background: #' + color + '99'">
       <img
         class="w-1/3"
         :src="require(`~/assets/images/${icon}.png`)"
         alt="card-icon"
       />
     </div>
-    <div class="mt-2 flex flex-col">
-      <h3 class="mt-1"><slot name="stack"></slot></h3>
-      <h2 class="mt-4"><slot name="name"></slot></h2>
-      <h6><slot name="definition"></slot></h6>
-      <h5 class="mt-4"><slot name="description"></slot></h5>
-      <div class="mt-4 flex" :style="cssVars">
+    <div class="mt-4 flex flex-col">
+      <h3 class="mt-4"><slot name="stack"></slot></h3>
+      <h2 class="mt-6"><slot name="name"></slot></h2>
+      <h6 class="mt-0.5 ml-1"><slot name="definition"></slot></h6>
+      <h5 class="mt-6"><slot name="description"></slot></h5>
+      <div class="mt-6 flex" :style="cssVars">
         <slot name="links"></slot>
       </div>
     </div>
