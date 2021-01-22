@@ -10,6 +10,9 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' }
     ],
+    htmlAttrs: {
+      lang: 'en'
+    },
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
@@ -55,6 +58,15 @@ export default {
         minifyURLs: true,
         removeComments: true,
         removeEmptyElements: true
+      }
+    }
+  },
+
+  render: {
+    bundleRenderer: {
+      shouldPreload: (file, type) => {
+        if (type === 'font') return /.woff2/.test(file)
+        return ['script', 'style'].includes(type)
       }
     }
   }
