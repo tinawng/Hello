@@ -58,7 +58,7 @@
       </project-card>
       <project-card id="c3" class="" icon="dango" color="F76184">
         <template v-slot:stack
-          >Server Side Rendered Website ~ Fullstack</template
+          >Server Side Rendered Website ~ Jamstack</template
         >
         <template v-slot:name>Dango</template>
         <template v-slot:definition>
@@ -80,7 +80,7 @@
       </project-card>
       <project-card id="c4" class="mt-48" icon="bookmark" color="f2cc89">
         <template v-slot:stack
-          >Server Side Rendered Website ~ Fullstack</template
+          >Server Side Rendered Website ~ Jamstack</template
         >
         <template v-slot:name>Bookmarks</template>
         <template v-slot:description>
@@ -97,16 +97,11 @@
           <a class="ml-6" href="http://bookmarks.tina.cafe/">Live Demo</a>
         </template>
       </project-card>
-      <project-card id="c5" class="" icon="dango" color="F76184">
-        <template v-slot:stack
-          >Server Side Rendered Website ~ Fullstack</template
-        >
-        <template v-slot:name>Dango</template>
-        <template v-slot:definition>
-          A Japanese sweet dumpling made from rice flour and served on a skewer.
-        </template>
+      <project-card id="c5" class="" icon="takeout-box" color="CCCCCC">
+        <template v-slot:stack>Static HTTP server ~ Backend</template>
+        <template v-slot:name>Takeaway</template>
         <template v-slot:description>
-          <p>Multipurpose rest api built with Fastify based on NodeJS</p>
+          <p>Lightweight and fully-cached static web server using raw NodeJS</p>
           <p>
             Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has
             stationes appulit navem, sed ut Scironis praerupta letalia
@@ -115,8 +110,7 @@
           </p>
         </template>
         <template v-slot:links
-          ><a href="https://github.com/tinawng/dango">GitHub Repo</a>
-          <a class="ml-6" href="http://dango.tina.cafe/">Live Demo</a>
+          ><a href="https://github.com/tinawng/takeaway">GitHub Repo</a>
         </template>
       </project-card>
       <project-card id="c6" class="mt-48" icon="bookmark" color="f2cc89">
