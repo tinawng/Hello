@@ -14,7 +14,7 @@
     >
       <span class="w-5" :class="[show_nav ? 'mb-0' : 'mb-1.5']"></span>
       <span
-        class="w-3 group-hover:w-5"
+        class="w-3 parent-hover:w-5"
         :class="{ 'opacity-0': show_nav }"
       ></span>
     </div>
@@ -38,7 +38,7 @@ export default {
 
 .burger-container {
   @apply h-full;
-  @apply group;
+  /* @apply group; */
   @apply cursor-pointer;
 }
 .burger-container span {
@@ -46,6 +46,9 @@ export default {
   @apply bg-steel-800;
   transition: all 0.4s;
   transition-property: margin, width, opacity;
+}
+.burger-container:hover .parent-hover\:w-5 {
+  @apply w-5
 }
 
 .slide-fade-enter-active,

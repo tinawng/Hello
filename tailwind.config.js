@@ -16,18 +16,6 @@ module.exports = {
           '800': '#333a51',
           '900': '#282e3f',
         },
-        beaver: {
-          '50': '#f7f7f6',
-          '100': '#f3f2ef',
-          '200': '#ece9e6',
-          '300': '#d8cfc7',
-          '400': '#bdaca1',
-          '500': '#a1857a',
-          '600': '#82615c',
-          '700': '#674a4e',
-          '800': '#503a42',
-          '900': '#403037',
-        },
       },
       fontSize: {
         'xxxs': '.6rem',
@@ -45,9 +33,6 @@ module.exports = {
     }),
   },
   variants: {
-    extend: {
-      width: ['group-hover'],
-    }
   },
   plugins: [],
 }
