@@ -26,7 +26,8 @@ export default {
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
     { src: '@/plugins/lax.js', mode: 'client' },
-    { src: '@/plugins/IntersectionHelper.js', mode: 'client' }
+    { src: '@/plugins/IntersectionHelper.js', mode: 'client' },
+    { src: '@/plugins/vue-lazyload.js', mode: 'client' }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -36,7 +37,14 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // https://github.com/juliomrqz/nuxt-optimized-images
+    // used packages: imagemin-mozjpeg imagemin-pngquant imagemin-svgo lqip-loader responsive-loader sharp
+    '@aceforth/nuxt-optimized-images',
   ],
+
+  optimizedImages: {
+    optimizeImages: true
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [

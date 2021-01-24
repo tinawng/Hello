@@ -1,9 +1,14 @@
 <template>
   <div class="card-container">
-    <div class="thumbnail flex-center" :style="'background: #' + color + '99'">
+    <div
+      v-lazy-container="{ selector: 'img' }"
+      class="thumbnail flex-center"
+      :style="'background: #' + color + '99'"
+    >
       <img
         class="w-1/3"
-        :src="require(`~/assets/images/${icon}.png`)"
+        :data-src="require(`~/assets/images/${icon}.png`)"
+        :data-loading="require(`~/assets/images/${icon}.png?lqip`)"
         alt="card-icon"
       />
     </div>
