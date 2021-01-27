@@ -1,187 +1,127 @@
 <template>
   <div>
-    <section id="title" class="h-screen pb-12 flex items-end">
-      <img
-        class="h-16 mr-6"
-        src="~/assets/images/bookmark_y.png"
-        alt="bookmark-icon"
-      />
-      <div class="text-left text-steel-900">
-        <h1>Tina Wang</h1>
-        <h4>projects bookmarks</h4>
-      </div>
-      <svg class="h-6 ml-auto" viewBox="0 0 24 24">
-        <path
-          fill="#282e3fAA"
-          d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
-        />
-      </svg>
+    <section class="-mt-10 text-center">
+      <h1>👋 Hello there, I'm <b>Tina Wang</b></h1>
+      <h3 class="mt-4">Jamstack Developer & UI/UX Designer Wannabe</h3>
     </section>
-    <section class="my-12 flex flex-wrap justify-between">
-      <project-card id="c1" icon="tanabata" color="79DB75">
-        <template v-slot:stack>REST API ~ Backend</template>
-        <template v-slot:name>Tanabata</template>
-        <template v-slot:definition>
-          A Tanabata tree, a type of wish tree on which people hang wishes
-          written on paper and other decorations during Tanabata, a Japanese
-          festival.
-        </template>
-        <template v-slot:description>
-          <p>Multipurpose rest api built with Fastify based on NodeJS</p>
-          <p>
-            Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has
-            stationes appulit navem, sed ut Scironis praerupta letalia
-            declinantes litoribus Cypriis contigui navigabant, quae Isauriae
-            scopulis sunt controversa.
-          </p>
-        </template>
-        <template v-slot:links
-          ><a href="https://github.com/tinawng/tanabata">GitHub Repo</a>
-        </template>
-      </project-card>
-      <project-card id="c2" class="mt-48" icon="grapes" color="5C2A92">
-        <template v-slot:stack>Static Website ~ Frontend</template>
-        <template v-slot:name>Grapes</template>
-        <template v-slot:description>
-          <p>Multipurpose rest api built with Fastify based on NodeJS</p>
-          <p>
-            Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has
-            stationes appulit navem, sed ut Scironis praerupta letalia
-            declinantes litoribus Cypriis contigui navigabant, quae Isauriae
-            scopulis sunt controversa.
-          </p>
-        </template>
-        <template v-slot:links
-          ><a href="https://github.com/tinawng/grapes">GitHub Repo</a
-          ><a class="ml-6" href="http://grapes.tina.cafe/">Live Demo</a>
-        </template>
-      </project-card>
-      <project-card id="c3" class="" icon="dango" color="F76184">
-        <template v-slot:stack
-          >Server Side Rendered Website ~ Jamstack</template
-        >
-        <template v-slot:name>Dango</template>
-        <template v-slot:definition>
-          A Japanese sweet dumpling made from rice flour and served on a skewer.
-        </template>
-        <template v-slot:description>
-          <p>Multipurpose rest api built with Fastify based on NodeJS</p>
-          <p>
-            Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has
-            stationes appulit navem, sed ut Scironis praerupta letalia
-            declinantes litoribus Cypriis contigui navigabant, quae Isauriae
-            scopulis sunt controversa.
-          </p>
-        </template>
-        <template v-slot:links
-          ><a href="https://github.com/tinawng/dango">GitHub Repo</a>
-          <a class="ml-6" href="http://dango.tina.cafe/">Live Demo</a>
-        </template>
-      </project-card>
-      <project-card id="c4" class="mt-48" icon="bookmark" color="f2cc89">
-        <template v-slot:stack
-          >Server Side Rendered Website ~ Jamstack</template
-        >
-        <template v-slot:name>Bookmarks</template>
-        <template v-slot:description>
-          <p>Multipurpose rest api built with Fastify based on NodeJS</p>
-          <p>
-            Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has
-            stationes appulit navem, sed ut Scironis praerupta letalia
-            declinantes litoribus Cypriis contigui navigabant, quae Isauriae
-            scopulis sunt controversa.
-          </p>
-        </template>
-        <template v-slot:links
-          ><a href="https://github.com/tinawng/bookmarks">GitHub Repo</a>
-          <a class="ml-6" href="http://bookmarks.tina.cafe/">Live Demo</a>
-        </template>
-      </project-card>
-      <project-card id="c5" class="" icon="takeout-box" color="CCCCCC">
-        <template v-slot:stack>Static HTTP server ~ Backend</template>
-        <template v-slot:name>Takeaway</template>
-        <template v-slot:description>
-          <p>Lightweight and fully-cached static web server using raw NodeJS</p>
-          <p>
-            Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has
-            stationes appulit navem, sed ut Scironis praerupta letalia
-            declinantes litoribus Cypriis contigui navigabant, quae Isauriae
-            scopulis sunt controversa.
-          </p>
-        </template>
-        <template v-slot:links
-          ><a href="https://github.com/tinawng/takeaway">GitHub Repo</a>
-        </template>
-      </project-card>
-      <project-card id="c6" class="mt-48" icon="bookmark" color="f2cc89">
-        <template v-slot:stack
-          >Server Side Rendered Website ~ Fullstack</template
-        >
-        <template v-slot:name>Bookmarks</template>
-        <template v-slot:description>
-          <p>Multipurpose rest api built with Fastify based on NodeJS</p>
-          <p>
-            Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has
-            stationes appulit navem, sed ut Scironis praerupta letalia
-            declinantes litoribus Cypriis contigui navigabant, quae Isauriae
-            scopulis sunt controversa.
-          </p>
-        </template>
-        <template v-slot:links
-          ><a href="https://github.com/tinawng/bookmarks">GitHub Repo</a>
-          <a class="ml-6" href="http://bookmarks.tina.cafe/">Live Demo</a>
-        </template>
-      </project-card>
+    <section class="mb-10">
+      <div class="grid grid-flow-row-2 lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <img
+            class="w-full mx-auto rounded-2xl shadow-lg"
+            :srcSet="img_tina_sizes.srcSet"
+            :src="img_tina_sizes.src"
+            alt="tina"
+          />
+        </div>
+        <div>
+          <h2>I'm a full-stack developer, entrepreneur and Coffe Lover</h2>
+          <h4 class="mt-2">
+            I've been in love with web development for more than 15 years. I'm
+            very passionate and enthusiastic about using technology to solve my
+            life's problems and ambitions, and not to mention, I really like a
+            good cup of coffee ☕️.
+          </h4>
+        </div>
+      </div>
+    </section>
+    <section class="bg-orange-250">
+      <div>
+        <h2>🔖 My Projects</h2>
+        <!-- <h4>Lorem lorem lorem ipsum</h4> -->
+        <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <project-card
+            v-for="project in projects"
+            :key="project.name"
+            :color="project.color"
+            :stack="project.stack"
+            :links="project.links"
+          >
+            <template v-slot:name>{{ project.name }}</template>
+            <template v-slot:emoji>{{ project.emoji }}</template>
+            <template v-slot:definition>{{ project.definition }}</template>
+            <template v-slot:description
+              ><span v-html="project.description"></span
+            ></template>
+          </project-card>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>⚗️ My Backend</h2>
+        <div class="h-96 mt-20 grid grid-cols md:grid-cols-2 gap-16 md:gap-0 justify-center">
+          <div class="flex-vertical-center-x text-center">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="22" y1="12" x2="2" y2="12"></line>
+              <path
+                d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
+              ></path>
+              <line x1="6" y1="16" x2="6.01" y2="16"></line>
+              <line x1="10" y1="16" x2="10.01" y2="16"></line>
+            </svg>
+            <h2 class="mt-8">Siyu</h2>
+            <h3 class="mt-6">Specs:</h3>
+            <h4 class="mt-0.5">
+              Raspberry Pi 4 <br />4 OC Cores ~ 4GB RAM <br />
+              16GB SD Card
+            </h4>
+            <h3 class="mt-4">Stack:</h3>
+            <h4 class="mt-0.5">
+              💨 Yeetify instance for 👋 Hello static website <br />
+              💨 Yeetify instance for 🍇 Grapes static website <br />
+              🍡 Dango SSR Nuxt Server <br />
+              🤖 Siyu's Disord Bot <br />
+            </h4>
+          </div>
+          <div class="flex-vertical-center-x text-center">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            </svg>
+            <h2 class="mt-8">Latte</h2>
+            <h3 class="mt-6">Specs:</h3>
+            <h4 class="mt-0.5">
+              Raspberry Pi 4 <br />
+              4 Cores ~ 4GB RAM <br />
+              4x1To SSD
+            </h4>
+            <h3 class="mt-4">Stack:</h3>
+            <h4 class="mt-0.5">
+              🗃️ MongoDB Database <br />
+              🍱 Samba Server <br />
+              🎋 Tanabata REST API
+            </h4>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>
 
 <script>
+import projects from "~/assets/data/projects.json";
+const img_tina_sizes = require("~/assets/img/tina.jpg?resize&sizes[]=600&sizes[]=900&sizes[]=1200");
+
 export default {
-  mounted() {
-    if (process.client) {
-      this.$lax.addElements("#title", {
-        scrollY: {
-          opacity: [
-            ["screenHeight * 0.75", "screenHeight * 0.9"],
-            [1, 0],
-          ],
-        },
-      });
-
-      var addFadeOut = (selector) => {
-        var self = this;
-
-        // ⚡️ Add listener only when element is visible on screen
-        this.$intersectionHelper.addTrigger(
-          selector,
-          () => {
-            self.$lax.addElements(selector, {
-              scrollY: {
-                opacity: [
-                  [
-                    window.scrollY + "+ screenHeight",
-                    window.scrollY + "+ screenHeight * 1.2",
-                  ],
-                  [1, 0],
-                ],
-              },
-            });
-          },
-          0
-        );
-      };
-
-      addFadeOut("#c1");
-      addFadeOut("#c2");
-      addFadeOut("#c3");
-      addFadeOut("#c4");
-      addFadeOut("#c5");
-      addFadeOut("#c6");
-    }
+  data() {
+    return { projects, img_tina_sizes };
   },
 };
 </script>
 
 <style lang="postcss" scoped>
+section {
+  @apply py-20;
+}
+svg {
+  @apply h-20;
+}
 </style>
