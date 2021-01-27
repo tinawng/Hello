@@ -6,7 +6,7 @@ html {
 
   font-family: "spacemono-regular";
   font-size: 18px;
-  @apply text-steel-900;
+  @apply text-steel-800;
   
   box-sizing: border-box;
 
@@ -16,16 +16,18 @@ html {
 }
 
 h1 {
-  @apply text-4xl;
-  font-family: "montserrat-regular";
-  letter-spacing: 0.5rem
+  @apply text-6xl;
+  font-family: "montserrat-bold";
+  letter-spacing: -0.2rem;
+  
 }
 h2 {
   @apply text-3xl;
-  font-family: "spacemono-regular";
+  font-family: "montserrat-semibold";
+  /* font-family: "spacemono-regular"; */
 }
 h3 {
-  @apply text-steel-700;
+  @apply text-lg text-steel-700;
   font-family: "spacemono-bolditalic";
 }
 h4 {
@@ -40,19 +42,35 @@ h6 {
   font-family: "montserrat-italic";
 }
 
+h1 > b {
+  @apply text-orange-300;
+}
+
 p {
   @apply mb-1;
 }
 
-a {
+.old_a {
   @apply w-max pb-1;
   @apply border-b border-black;
   transition: all 0.2s;
 }
-a:hover {
+.old_a:hover {
   @apply pb-0 mb-1;
   @apply text-steel-700 border-transparent;
   background: #F2CC89AA;
+}
+
+button {
+  @apply px-4 py-3;
+  @apply rounded-lg shadow-md hover:shadow-none active:shadow-inner;
+  @apply text-sm leading-none text-white;
+  font-family: "montserrat-semibold";
+
+  transition: background .2s;
+}
+button:focus {
+  @apply outline-none
 }
 
 .flex-center-x {
@@ -81,7 +99,7 @@ a:hover {
 }
 @font-face {
   font-family: "spacemono-italic";
-  src: url("../../static/fonts/spacemono/spacemono-italic.woff");
+  src: url("../../static/fonts/spacemono/spacemono-italic.woff2");
 }
 @font-face {
   font-family: "spacemono-bolditalic";
@@ -89,7 +107,7 @@ a:hover {
 }
 @font-face {
   font-family: "spacemono-bold";
-  src: url("../../static/fonts/spacemono/spacemono-bold.woff");
+  src: url("../../static/fonts/spacemono/spacemono-bold.woff2");
 }
 
 @font-face {
@@ -98,46 +116,25 @@ a:hover {
 }
 @font-face {
   font-family: "montserrat-semibold";
-  src: url("../../static/fonts/montserrat/montserrat-semibold.woff");
+  src: url("../../static/fonts/montserrat/montserrat-semibold.woff2");
 }
 @font-face {
   font-family: "montserrat-bold";
-  src: url("../../static/fonts/montserrat/montserrat-bold.ttf");
+  src: url("../../static/fonts/montserrat/montserrat-bold.woff2");
 }
 @font-face {
   font-family: "montserrat-light";
-  src: url("../../static/fonts/montserrat/montserrat-light.ttf");
+  src: url("../../static/fonts/montserrat/montserrat-light.woff2");
 }
 @font-face {
   font-family: "montserrat-medium";
-  src: url("../../static/fonts/montserrat/montserrat-medium.ttf");
+  src: url("../../static/fonts/montserrat/montserrat-medium.woff2");
 }
 @font-face {
   font-family: "montserrat-thin";
-  src: url("../../static/fonts/montserrat/montserrat-thin.ttf");
+  src: url("../../static/fonts/montserrat/montserrat-thin.woff2");
 }
 @font-face {
   font-family: "montserrat-italic";
   src: url("../../static/fonts/montserrat/montserrat-italic.woff2");
-}
-
-@font-face {
-  font-family: "quicksand-bold";
-  src: url("../../static/fonts/quicksand/quicksand-bold.ttf");
-}
-@font-face {
-  font-family: "quicksand-light";
-  src: url("../../static/fonts/quicksand/quicksand-light.ttf");
-}
-@font-face {
-  font-family: "quicksand-medium";
-  src: url("../../static/fonts/quicksand/quicksand-medium.ttf");
-}
-@font-face {
-  font-family: "quicksand-regular";
-  src: url("../../static/fonts/quicksand/quicksand-regular.ttf");
-}
-@font-face {
-  font-family: "quicksand-semibold";
-  src: url("../../static/fonts/quicksand/quicksand-semibold.ttf");
 }
