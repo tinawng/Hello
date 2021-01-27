@@ -1,0 +1,75 @@
+[
+    {
+        "name": "Hello",
+        "description": "Your're looking at it! A <b>static website</b> to present myself 💁‍♀️",
+        "emoji": "👋",
+        "color": "orange",
+        "stack": [
+            "Nuxt.js",
+            "Tailwind CSS"
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tinawng/hello"
+            },
+            {
+                "name": "Live",
+                "url": "https://tina.cafe"
+            }
+        ]
+    },
+    {
+        "name": "Yeetify",
+        "description": "A super duper lightweight, fully cached, with compression support, <b>static web server</b> using raw NodeJS ⚡",
+        "emoji": "💨",
+        "color": "steel",
+        "stack": [
+            "Node.js"
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tinawng/yeetify"
+            }
+        ]
+    },
+    {
+        "name": "Dango",
+        "description": "My personal crappy <b>\"NETFLIX-like\" website</b> for streaming movies from my home's NAS server 📺",
+        "emoji": "🍡",
+        "color": "red",
+        "stack": [
+            "Nuxt.js",
+            "Tailwind CSS"
+        ],
+        "definition": "A Japanese sweet dumpling made from rice flour and served on a skewer.",
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tinawng/dango"
+            },
+            {
+                "name": "Live",
+                "url": "https://dango.tina.cafe"
+            }
+        ]
+    },
+    {
+        "name": "Tanabata",
+        "description": "My personal crappy netflix 📺",
+        "emoji": "🎋",
+        "color": "green",
+        "stack": [
+            "Fastify.js",
+            "Mongoose"
+        ],
+        "definition": " A type of wish tree on which people hang wishes written on paper and other decorations during Tanabata, a Japanese festival.",
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tinawng/tanabata"
+            }
+        ]
+    }
+]
