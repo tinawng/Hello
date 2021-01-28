@@ -18,7 +18,7 @@
 section > *,
 nav-container {
   width: 1200px;
-  max-width: 90vw;
+  max-width: 80vw;
   @apply mx-auto;
 }
 </style>

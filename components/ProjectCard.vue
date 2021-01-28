@@ -8,15 +8,13 @@
       <h6 class="mt-0.5 ml-4"><slot name="definition"></slot></h6>
       <h4 class="mt-2"><slot name="description"></slot></h4>
 
-      <h4 class="mt-4 mb-0.5">Stack:</h4>
+      <h4 class="mt-auto pt-4 mb-0.5">Stack:</h4>
       <h4 v-for="tech in stack" :key="tech.name" class="flex justify-between">
         <span class="font-bold">{{tech.name}}</span>
         <h6 class="text-right">{{tech.description}}</h6>
       </h4>
-      <!-- <div class="mt-2 ml-4 flex">
-        <h5 class="pill" :class="'border-' + color + '-300 text-' + color + '-600'" v-for="tech in stack" :key="tech">{{tech}}</h5>
-      </div> -->
-      <div class="mt-auto pt-6 pb-1 text-right">
+      
+      <div class="pt-4 pb-1 text-right">
         <button
           v-for="link in links"
           :key="link.name"
@@ -53,9 +51,4 @@ export default {
 .card-container {
   @apply bg-orange-50 rounded-lg shadow-lg;
 }
-
-/* .pill {
-  @apply mr-2 px-2;
-  @apply border-2 rounded-full;
-} */
 </style>
