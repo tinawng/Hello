@@ -24,7 +24,6 @@ h1 {
 h2 {
   @apply text-3xl;
   font-family: "montserrat-semibold";
-  /* font-family: "spacemono-regular"; */
 }
 h3 {
   @apply text-lg text-steel-700;
@@ -32,6 +31,7 @@ h3 {
 }
 h4 {
   @apply text-sm;
+  font-family: "spacemono-regular";
 }
 h5 {
   font-size: 0.8rem;
@@ -44,6 +44,9 @@ h6 {
 
 h1 > b {
   @apply text-orange-300;
+}
+h2 > b {
+  font-family: "montserrat-bold";
 }
 
 p {
@@ -121,6 +124,10 @@ button:focus {
 @font-face {
   font-family: "montserrat-bold";
   src: url("../../static/fonts/montserrat/montserrat-bold.woff2");
+}
+@font-face {
+  font-family: "montserrat-black";
+  src: url("../../static/fonts/montserrat/montserrat-black.woff2");
 }
 @font-face {
   font-family: "montserrat-light";

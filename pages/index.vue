@@ -27,7 +27,7 @@
     </section>
     <section class="bg-orange-250">
       <div>
-        <h2>🔖 My Projects</h2>
+        <h2><b>🔖 My Projects</b></h2>
         <!-- <h4>Lorem lorem lorem ipsum</h4> -->
         <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           <project-card
@@ -49,7 +49,7 @@
     </section>
     <section>
       <div>
-        <h2>⚗️ My Backend</h2>
+        <h2><b>⚗️ My Backend</b></h2>
         <div class="h-96 mt-20 grid grid-cols md:grid-cols-2 gap-16 md:gap-0 justify-center">
           <div class="flex-vertical-center-x text-center">
             <svg
@@ -69,7 +69,7 @@
             <h2 class="mt-8">Siyu</h2>
             <h3 class="mt-6">Specs:</h3>
             <h4 class="mt-0.5">
-              Raspberry Pi 4 <br />4 OC Cores ~ 4GB RAM <br />
+              Raspberry Pi 4 <br />4 Cores ~ 4GB RAM <br />
               16GB SD Card
             </h4>
             <h3 class="mt-4">Stack:</h3>
