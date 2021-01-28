@@ -1,6 +1,13 @@
 module.exports = {
-  purge: ['./src/**/*.html', './src/**/*.vue', './src/**/*.js', './src/**/*.postcss'],
-  darkMode: false, // or 'media' or 'class'
+  purge: {
+    content: ['./src/**/*.html', './src/**/*.vue', './src/**/*.js', './src/**/*.postcss'],
+
+    options: {
+      // safelist: ['bg-steel-100']
+      safelist: [/bg-[a-z]{1,}-100$/, /bg-[a-z]{1,}-300$/, /bg-[a-z]{1,}-400$/]
+    },
+  },
+  darkMode: false,
   theme: {
     extend: {
       colors: {
