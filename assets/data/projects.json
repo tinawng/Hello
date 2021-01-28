@@ -1,7 +1,7 @@
 [
     {
         "name": "Hello",
-        "description": "Your're looking at it! A <b>static website</b> to present myself 💁‍♀️",
+        "description": "Your're looking at it! A <b>static website</b> to present me & my projects 💁‍♀️",
         "emoji": "👋",
         "color": "orange",
         "stack": [
@@ -76,7 +76,7 @@
     },
     {
         "name": "Tanabata",
-        "description": "My all-in-one <b>REST API</b>. Used for <b>auth & data provision</b> for almost all my others projects. <br/>Also has extra features✨ like video downloading (using youtube-dl), external data storage (via firebase)",
+        "description": "My all-in-one <b>REST API</b>. Used for <b>auth & data provision</b> on almost all my others projects. <br/>Also has extra features✨ like video downloading (using youtube-dl), external data storage (via Firebase)",
         "definition": "A type of wish tree on which people hang wishes written on paper and other decorations during Tanabata, a Japanese festival.",
         "emoji": "🎋",
         "color": "green",
@@ -87,7 +87,7 @@
             },
             {
                 "name": "Mongoose",
-                "description": "Mongodb Javascript Interface"
+                "description": "MongoDB Javascript Interface"
             },
             {
                 "name": "JWT & Bcrypt",
