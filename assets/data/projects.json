@@ -1,0 +1,131 @@
+[
+    {
+        "name": "Hello",
+        "description": "Your're looking at it! A <b>static website</b> to present me & my projects 💁‍♀️",
+        "emoji": "👋",
+        "color": "orange",
+        "stack": [
+            {
+                "name": "Nuxt.js",
+                "description": "Static content generation"
+            },
+            {
+                "name": "Tailwind CSS",
+                "description": "Style Framework"
+            },
+            {
+                "name": "Yeetify",
+                "description": "Web Server"
+            }
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tinawng/hello"
+            },
+            {
+                "name": "Live",
+                "url": "https://tina.cafe"
+            }
+        ]
+    },
+    {
+        "name": "Yeetify",
+        "description": "A super duper lightweight, fully cached, with compression support, <b>static web server</b> using raw NodeJS ⚡",
+        "emoji": "💨",
+        "color": "steel",
+        "stack": [
+            {
+                "name": "Node.js",
+                "description": "Runtime"
+            }
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tinawng/yeetify"
+            }
+        ]
+    },
+    {
+        "name": "Dango",
+        "description": "My personal crappy <b>\"NETFLIX-like\" website</b> for streaming movies from my home's NAS server 📺",
+        "definition": "A Japanese sweet dumpling made from rice flour and served on a skewer.",
+        "emoji": "🍡",
+        "color": "red",
+        "stack": [
+            {
+                "name": "Nuxt.js",
+                "description": "Server Side Rendering"
+            },
+            {
+                "name": "Tailwind CSS",
+                "description": "Style Framework"
+            }
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tinawng/dango"
+            },
+            {
+                "name": "Live",
+                "url": "https://dango.tina.cafe"
+            }
+        ]
+    },
+    {
+        "name": "Tanabata",
+        "description": "My all-in-one <b>REST API</b>. Used for <b>auth & data provision</b> on almost all my others projects. <br/>Also has extra features✨ like video downloading (using youtube-dl), external data storage (via Firebase)",
+        "definition": "A type of wish tree on which people hang wishes written on paper and other decorations during Tanabata, a Japanese festival.",
+        "emoji": "🎋",
+        "color": "green",
+        "stack": [
+            {
+                "name": "Fastify",
+                "description": "REST Framework"
+            },
+            {
+                "name": "Mongoose",
+                "description": "MongoDB Javascript Interface"
+            },
+            {
+                "name": "JWT & Bcrypt",
+                "description": "Authentification"
+            }
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tinawng/tanabata"
+            }
+        ]
+    },
+    {
+        "name": "Grapes",
+        "description": "My take on Arturia website with a simple, light & minimalist approach.",
+        "definition": "",
+        "emoji": "🍇",
+        "color": "purple",
+        "stack": [
+            {
+                "name": "Gridsome",
+                "description": "Static content generation"
+            },
+            {
+                "name": "Tailwind CSS",
+                "description": "Style Framework"
+            },
+            {
+                "name": "Yeetify",
+                "description": "Web Server"
+            }
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tinawng/grapes"
+            }
+        ]
+    }
+]

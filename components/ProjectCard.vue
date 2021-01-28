@@ -1,24 +1,36 @@
 <template>
-  <div class="card-container">
-    <div
-      v-lazy-container="{ selector: 'img' }"
-      class="thumbnail flex-center"
-      :style="'background: #' + color + '99'"
-    >
-      <img
-        class="w-1/3"
-        :data-src="require(`~/assets/images/${icon}.png`)"
-        :data-loading="require(`~/assets/images/${icon}.png?lqip`)"
-        alt="card-icon"
-      />
+  <div class="card-container flex flex-col">
+    <div class="h-44 flex-center rounded-t-lg" :class="'bg-' + color + '-100'">
+      <span class="text-7xl"><slot name="emoji"></slot></span>
     </div>
-    <div class="mt-4 flex flex-col">
-      <h3 class="mt-4"><slot name="stack"></slot></h3>
-      <h2 class="mt-6"><slot name="name"></slot></h2>
-      <h6 class="mt-0.5 ml-1"><slot name="definition"></slot></h6>
-      <h5 class="mt-6"><slot name="description"></slot></h5>
-      <div class="mt-6 flex" :style="cssVars">
-        <slot name="links"></slot>
+    <div class="p-4 flex-grow flex flex-col">
+      <h2><slot name="name"></slot></h2>
+      <h6 class="mt-0.5 ml-4"><slot name="definition"></slot></h6>
+      <h4 class="mt-2"><slot name="description"></slot></h4>
+
+      <h4 class="mt-auto pt-4 mb-0.5">Stack:</h4>
+      <h4 v-for="tech in stack" :key="tech.name" class="flex justify-between">
+        <span class="font-bold">{{tech.name}}</span>
+        <h6 class="text-right">{{tech.description}}</h6>
+      </h4>
+      
+      <div class="pt-4 pb-1 text-right">
+        <button
+          v-for="link in links"
+          :key="link.name"
+          class="ml-4"
+          :class="
+            'bg-' +
+            color +
+            '-400 hover:bg-' +
+            color +
+            '-300 active:bg-' +
+            color +
+            '-400'
+          "
+        >
+          <a :href="link.url">{{ link.name }}</a>
+        </button>
       </div>
     </div>
   </div>
@@ -26,25 +38,17 @@
 
 <script>
 export default {
-  props: ["icon", "color"],
-  computed: {
-    cssVars() {
-      return {
-        "--bg-color": "#" + this.color + "AA",
-      };
-    },
+  props: ["color", "stack", "links"],
+  mounted() {
+    this.$el.getElementsByTagName("b").forEach((el) => {
+      el.classList.add("bg-" + this.color + "-200");
+    });
   },
 };
 </script>
 
 <style lang="postcss" scoped>
 .card-container {
-  width: calc(50% - 5vw);
-}
-.thumbnail {
-  @apply h-64 w-full;
-}
-a:hover {
-  background: var(--bg-color);
+  @apply bg-orange-50 rounded-lg shadow-lg;
 }
 </style>
