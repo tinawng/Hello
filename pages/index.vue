@@ -1,59 +1,53 @@
 <template>
   <div>
-    <section class="-mt-10 text-center">
+    <section class="xl:-mt-10 text-center">
       <h1>👋 Hello there, I'm <b>Tina Wang</b></h1>
       <h3 class="mt-4">Jamstack Developer & UI/UX Designer Wannabe</h3>
     </section>
-    <section class="mb-10">
+    <section class="hero">
       <div
-        class="grid grid-flow-row-2 lg:grid-cols-2 gap-8 lg:gap-y-16 items-center"
+        class="grid grid-flow-row-2 lg:grid-cols-2 gap-4 lg:gap-8 xl:gap-y-16 items-center"
       >
         <img
-          class="w-full mx-auto rounded-2xl shadow-lg"
           :srcSet="img_tina_sizes.srcSet"
           :src="img_tina_sizes.src"
           alt="tina"
         />
-        <div class="mb-16 lg:mb-0">
-          <h2>I'm a Jamstack developer, UI designer and Music Lover</h2>
-          <h4 class="mt-2">
-            I've been in love with web development since my very first
-            experiments with it. I'm very passionate and enthusiastic about
-            using technology to solve my life's problems and ambitions, and not
-            to mention, I really like a good cup of cafe ☕️ while listening to
-            some of my favorite albums 🎵.
-          </h4>
-        </div>
+        <h4>
+          <h2 class="mb-2 text-left">
+            I'm a Jamstack developer, UI designer and Music Lover
+          </h2>
+          I've been in love with web development since my very first experiments
+          with it. I'm very passionate and enthusiastic about using technology
+          to solve my life's problems and ambitions, and not to mention, I
+          really like a good cup of cafe ☕️ while listening to some of my
+          favorite albums 🎵.
+        </h4>
 
-        <div class="mb-16 lg:mb-0 row-start-4 lg:row-start-auto lg:text-right">
-          <h4 class="mt-2">
-            This passion for music comes with my joy of playing piano (for
-            almost 20years now 💪), which ultimatly led me to my first job 🎉.
-          </h4>
-        </div>
+        <h4 class="row-start-4 lg:row-start-auto lg:text-right">
+          This passion for music comes with my joy of playing piano (for almost
+          20years now 💪), which ultimatly led me to my first job 🎉.
+        </h4>
         <img
-          class="w-full mx-auto rounded-2xl shadow-lg"
           :srcSet="img_piano_sizes.srcSet"
           :src="img_piano_sizes.src"
-          alt="tina"
+          alt="piano"
         />
 
         <img
-          class="w-full mx-auto rounded-2xl shadow-lg"
           :srcSet="img_grapes_thumnail_sizes.srcSet"
           :src="img_grapes_thumnail_sizes.src"
-          alt="tina"
+          alt="grapes-thumnail"
         />
-        <div class="mb-16 lg:mb-0">
-          <h4>
-            I approach every project with passion and dedication, applying
-            meticulous detail 🎨, skills and craftsmanship to every stage of my
-            creating process ✨.
-          </h4>
-        </div>
+        <h4>
+          I approach every project with passion and dedication, applying
+          meticulous detail 🎨, skills and craftsmanship to every stage of my
+          creating process ✨.
+        </h4>
       </div>
     </section>
-    <section class="bg-orange-250">
+
+    <section class="projects">
       <div>
         <h2><b>🔖 My Projects</b></h2>
         <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -71,10 +65,10 @@
               ><span v-html="project.description"></span
             ></template>
           </project-card>
-          <div class="flex-vertical-center">
-            <h3 class="text-2xl">And many more...</h3>
+          <div class="mt-10 xl:mt-0 flex-vertical-center">
+            <h3 class="text-lg xl:text-2xl">And many more...</h3>
             <button
-              class="mt-4 bg-steel-700 hover:bg-steel-500 active:bg-steel-700"
+              class="mt-4 px-4 py-3 bg-steel-700 hover:bg-steel-500 active:bg-steel-700"
             >
               <a href="https://github.com/tinawng/"
                 ><h4>visit my GitHub 🚀</h4></a
@@ -85,11 +79,11 @@
       </div>
     </section>
 
-    <section class="opacity-75">
+    <section class="backend">
       <div>
         <h2><b>⚗️ My Backend</b></h2>
         <div
-          class="mt-20 grid grid-cols md:grid-cols-2 gap-16 md:gap-0 justify-center"
+          class="mt-10 grid grid-cols md:grid-cols-2 gap-16 md:gap-0 justify-center"
         >
           <div class="flex-vertical-center-x text-center">
             <svg
@@ -151,7 +145,7 @@
     </section>
 
     <section class="footer">
-      <div class="mt-10 grid md:grid-cols-3 gap-8 md:gap-0">
+      <div class="grid grid-cols-3 gap-8 md:gap-0">
         <a
           href="https://www.instagram.com/tina_likes_cafe/"
           class="flex-vertical-center"
@@ -229,15 +223,38 @@ export default {
 section {
   @apply py-20;
 }
-svg {
-  @apply h-20;
+
+section.projects {
+  @apply bg-orange-250;
+}
+
+section.hero {
+  @apply md:mb-10;
+}
+section.hero h2 {
+  @apply text-md md:text-xl xl:text-3xl leading-tight;
+}
+section.hero h4 {
+  @apply mb-16 lg:mb-0;
+  @apply text-justify;
+}
+section.hero img {
+  @apply w-full mx-auto;
+  @apply rounded-2xl shadow-lg;
+}
+
+section.backend {
+  @apply opacity-75;
+}
+section.backend svg {
+  @apply h-16;
 }
 
 section.footer {
   @apply bg-steel-900 text-steel-200;
 }
 section.footer svg {
-  @apply h-10;
+  @apply h-6 md:h-10;
 }
 section.footer h3 {
   @apply mt-2 text-steel-200;

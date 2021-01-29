@@ -29,7 +29,7 @@
             '-400'
           "
         >
-          <a :href="link.url">{{ link.name }}</a>
+          <a :href="link.url"><h5>{{ link.name }}</h5></a>
         </button>
       </div>
     </div>

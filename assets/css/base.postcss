@@ -16,29 +16,29 @@ html {
 }
 
 h1 {
-  @apply text-6xl;
+  @apply text-4xl md:text-6xl;
   font-family: "montserrat-bold";
   letter-spacing: -0.2rem;
   
 }
 h2 {
-  @apply text-3xl;
+  @apply text-xl md:text-3xl;
   font-family: "montserrat-semibold";
 }
 h3 {
-  @apply text-lg text-steel-700;
+  @apply text-sm md:text-lg text-steel-700;
   font-family: "spacemono-bolditalic";
 }
 h4 {
-  @apply text-sm;
+  @apply text-2xs md:text-sm;
   font-family: "spacemono-regular";
 }
 h5 {
-  font-size: 0.8rem;
-  font-family: "montserrat-regular";
+  @apply text-xs md:text-sm;
+  font-family: "montserrat-semibold";
 }
 h6 {
-  @apply text-xxxs;
+  @apply text-4xs md:text-3xs;
   font-family: "montserrat-italic";
 }
 
@@ -65,10 +65,9 @@ p {
 }
 
 button {
-  @apply px-4 py-3;
+  @apply px-3 py-2 xl:px-4 xl:py-3;
   @apply rounded-lg shadow-md hover:shadow-none active:shadow-inner;
-  @apply text-sm leading-none text-white;
-  font-family: "montserrat-semibold";
+  @apply leading-none text-white;
 
   transition: background .2s;
 }
@@ -103,10 +102,6 @@ button:focus {
 @font-face {
   font-family: "spacemono-bolditalic";
   src: url("../../static/fonts/spacemono/spacemono-bolditalic.woff2");
-}
-@font-face {
-  font-family: "montserrat-regular";
-  src: url("../../static/fonts/montserrat/montserrat-regular.woff2");
 }
 @font-face {
   font-family: "montserrat-semibold";

@@ -38,15 +38,14 @@ module.exports = {
         },
       },
       fontSize: {
-        'xxxs': '.6rem',
-        'xxs': '.7rem'
+        'md': '1rem',
+        '2xs': '.7rem',
+        '3xs': '.6rem',
+        '4xs': '.5rem',
       },
       minWidth: {
         'screen': '100vw'
-      },
-      screens: {
-        'portrait': { 'raw': '(orientation: portrait)' },
-      },
+      }
     },
     backgroundColor: theme => ({
       ...theme('colors'),
