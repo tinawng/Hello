@@ -1,7 +1,7 @@
 <template>
   <div class="card-container flex flex-col">
     <div class="h-44 flex-center rounded-t-lg" :class="'bg-' + color + '-100'">
-      <span class="text-7xl"><slot name="emoji"></slot></span>
+      <span class="text-7xl emoji"><slot name="emoji"></slot></span>
     </div>
     <div class="p-4 flex-grow flex flex-col">
       <h2><slot name="name"></slot></h2>
@@ -50,5 +50,10 @@ export default {
 <style lang="postcss" scoped>
 .card-container {
   @apply bg-orange-50 rounded-lg shadow-lg;
+}
+
+.card-container:hover .emoji {
+  animation-name: bounce;
+  animation-duration: .5s;
 }
 </style>
