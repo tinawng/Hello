@@ -2,11 +2,10 @@
   <section>
     <div class="z-50 nav-container flex-center-y justify-end">
       <transition name="slide-fade">
-        <div v-if="show_nav" class="w-1/3 flex justify-between mr-16">
-          <h4></h4>
-          <h4>resume</h4>
-          <h4>github</h4>
-          <h4>instagram</h4>
+        <div v-if="show_nav" class="w-full flex justify-end mr-4">
+          <h4 @click="scrollTo('hero')">About</h4>
+          <h4 @click="scrollTo('projects')">Projects</h4>
+          <h4 @click="scrollTo('footer')">Links</h4>
         </div>
       </transition>
       <div
@@ -28,19 +27,26 @@ export default {
   data: () => ({
     show_nav: false,
   }),
+  methods: {
+    scrollTo(section_name) {
+      var el = this.$parent.$parent.$el.getElementsByClassName(section_name)[0];
+      el.scrollIntoView({behavior: "smooth"});
+    }
+  }
 };
 </script>
 
 <style lang="postcss" scoped>
 .nav-container {
-  /* @apply fixed top-0; */
   @apply h-32;
-  /* width: inherit; */
+}
+.nav-container h4 {
+  @apply mx-4;
+  @apply cursor-pointer;
 }
 
 .burger-container {
   @apply h-full;
-  /* @apply group; */
   @apply cursor-pointer;
 }
 .burger-container span {
@@ -51,16 +57,5 @@ export default {
 }
 .burger-container:hover .parent-hover\:w-5 {
   @apply w-5;
-}
-
-.slide-fade-enter-active,
-.slide-fade-leave-active {
-  transition: all 0.4s;
-  transition-property: transform, opacity;
-}
-.slide-fade-enter,
-.slide-fade-leave-to {
-  transform: translateY(5px);
-  opacity: 0;
 }
 </style>

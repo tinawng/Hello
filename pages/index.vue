@@ -4,7 +4,7 @@
       <h1>👋 Hello there, I'm <b>Tina Wang</b></h1>
       <h3 class="mt-4">Jamstack Developer & UI/UX Designer Wannabe</h3>
     </section>
-    <section class="hero">
+    <section ref="hero" class="hero">
       <div
         class="grid grid-flow-row-2 lg:grid-cols-2 gap-4 lg:gap-8 xl:gap-y-16 items-center"
       >

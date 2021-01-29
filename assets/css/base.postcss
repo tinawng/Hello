@@ -4,6 +4,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 
+  -webkit-tap-highlight-color: transparent;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+
   font-family: "spacemono-regular";
   font-size: 18px;
   @apply text-steel-800;
@@ -95,6 +99,16 @@ button:focus {
 }
 
 /* 💫 Animations */
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all 0.4s;
+  transition-property: transform, opacity;
+}
+.slide-fade-enter,
+.slide-fade-leave-to {
+  transform: translateY(5px);
+  opacity: 0;
+}
 @keyframes bounce {
 	0%,
 	20%,
