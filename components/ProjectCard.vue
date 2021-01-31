@@ -41,7 +41,8 @@ export default {
   props: ["color", "stack", "links"],
   mounted() {
     this.$el.getElementsByTagName("b").forEach((el) => {
-      el.classList.add("bg-" + this.color + "-200");
+      el.classList.add("bg-" + this.color + "-300");
+      el.classList.add("bg-opacity-50");
     });
   },
 };
