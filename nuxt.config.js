@@ -8,7 +8,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'A static website to present me & my projects 💁‍♀️' }
     ],
     htmlAttrs: {
       lang: 'en'
@@ -25,9 +25,9 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    { src: '@/plugins/lax.js', mode: 'client' },
-    { src: '@/plugins/IntersectionHelper.js', mode: 'client' },
-    { src: '@/plugins/vue-lazyload.js', mode: 'client' }
+    // { src: '@/plugins/lax.js', mode: 'client' },
+    // { src: '@/plugins/IntersectionHelper.js', mode: 'client' },
+    // { src: '@/plugins/vue-lazyload.js', mode: 'client' }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
