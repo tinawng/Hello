@@ -4,15 +4,18 @@
       <h1>👋 Hello there, I'm <b>Tina Wang</b></h1>
       <h3 class="mt-4">Jamstack Developer & UI/UX Designer Wannabe</h3>
     </section>
+
     <section ref="hero" class="hero">
       <div
         class="grid grid-flow-row-2 lg:grid-cols-2 gap-4 lg:gap-8 xl:gap-y-16 items-center"
       >
-        <img
+
+        <!-- <img
           :srcSet="img_tina_sizes.srcSet"
           :src="img_tina_sizes.src"
           alt="tina"
-        />
+        /> -->
+        <ResponsiveImage :images="img_tina_sizes.images" alt="tina"/>
         <h4>
           <h2 class="mb-2 text-left">
             I'm a Jamstack developer, UI designer and Music Lover
@@ -28,17 +31,19 @@
           This passion for music comes with my joy of playing piano (for almost
           20years now 💪), which ultimatly led me to my first job 🎉.
         </h4>
-        <img
+        <ResponsiveImage :images="img_piano_sizes.images" alt="piano"/>
+        <!-- <img
           :srcSet="img_piano_sizes.srcSet"
           :src="img_piano_sizes.src"
           alt="piano"
-        />
+        /> -->
 
-        <img
+        <!-- <img
           :srcSet="img_grapes_thumnail_sizes.srcSet"
           :src="img_grapes_thumnail_sizes.src"
           alt="grapes-thumnail"
-        />
+        /> -->
+        <ResponsiveImage :images="img_grapes_thumnail_sizes.images" alt="grapes-thumnail"/>
         <h4>
           I approach every project with passion and dedication, applying
           meticulous detail 🎨, skills and craftsmanship to every stage of my
@@ -203,9 +208,9 @@
 
 <script>
 import projects from "~/assets/data/projects.json";
-const img_tina_sizes = require("~/assets/img/tina.jpg?resize&sizes[]=600&sizes[]=900&sizes[]=1200");
-const img_grapes_thumnail_sizes = require("~/assets/img/grapes-thumbnail.jpg?resize&sizes[]=600&sizes[]=900&sizes[]=1200");
-const img_piano_sizes = require("~/assets/img/piano.jpg?resize&sizes[]=600&sizes[]=900&sizes[]=1200");
+const img_tina_sizes = require("~/assets/img/tina.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=900&format=webp");
+const img_grapes_thumnail_sizes = require("~/assets/img/grapes-thumbnail.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=900&format=webp");
+const img_piano_sizes = require("~/assets/img/piano.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=900&format=webp");
 
 export default {
   data() {
@@ -239,6 +244,10 @@ section.hero h4 {
   @apply text-justify;
 }
 section.hero img {
+  @apply w-full mx-auto;
+  @apply rounded-2xl shadow-lg;
+}
+section.hero .responsive-image {
   @apply w-full mx-auto;
   @apply rounded-2xl shadow-lg;
 }
