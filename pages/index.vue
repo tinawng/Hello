@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="xl:-mt-10 text-center">
+    <section class="text-center">
       <h1>👋 Hello there, I'm <b>Tina Wang</b></h1>
       <h3 class="mt-4">Jamstack Developer & UI/UX Designer Wannabe</h3>
     </section>
