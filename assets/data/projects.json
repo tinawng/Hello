@@ -31,7 +31,7 @@
     },
     {
         "name": "Yeetify",
-        "description": "A super duper lightweight, fully cached, with compression support, <b>static web server</b> using raw NodeJS ⚡",
+        "description": "A super duper lightweight, fully cached, with asynchronous logging & compression support, <b>static web server</b> using raw NodeJS ⚡",
         "emoji": "💨",
         "color": "steel",
         "stack": [
@@ -44,6 +44,36 @@
             {
                 "name": "GitHub",
                 "url": "https://github.com/tinawng/yeetify"
+            }
+        ]
+    },
+    {
+        "name": "Chill",
+        "description": "A small one week project whose goal was to create a <b>music player</b> of endless chill music flow with very <b>sleek & minimalist design</b> 🎵",
+        "emoji": "☕",
+        "color": "chocolate",
+        "stack": [
+            {
+                "name": "Nuxt.js",
+                "description": "Static content generation"
+            },
+            {
+                "name": "Tailwind CSS",
+                "description": "Style Framework"
+            },
+            {
+                "name": "Yeetify",
+                "description": "Web Server"
+            }
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tinawng/chill"
+            },
+            {
+                "name": "Live",
+                "url": "https://chill.tina.cafe"
             }
         ]
     },
