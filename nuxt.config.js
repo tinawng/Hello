@@ -25,9 +25,6 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    // { src: '@/plugins/lax.js', mode: 'client' },
-    // { src: '@/plugins/IntersectionHelper.js', mode: 'client' },
-    // { src: '@/plugins/vue-lazyload.js', mode: 'client' }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
