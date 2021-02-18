@@ -170,7 +170,7 @@
           <h3>instagram</h3>
         </a>
         <a
-          href="https://www.instagram.com/tina_likes_cafe/"
+          href="https://github.com/tinawng"
           class="flex-vertical-center"
         >
           <svg
