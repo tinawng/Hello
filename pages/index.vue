@@ -9,12 +9,6 @@
       <div
         class="grid grid-flow-row-2 lg:grid-cols-2 gap-4 lg:gap-8 xl:gap-y-16 items-center"
       >
-
-        <!-- <img
-          :srcSet="img_tina_sizes.srcSet"
-          :src="img_tina_sizes.src"
-          alt="tina"
-        /> -->
         <ResponsiveImage :images="img_tina_sizes.images" alt="tina"/>
         <h4>
           <h2 class="mb-2 text-left">
@@ -32,17 +26,6 @@
           20years now 💪), which ultimatly led me to my first job 🎉.
         </h4>
         <ResponsiveImage :images="img_piano_sizes.images" alt="piano"/>
-        <!-- <img
-          :srcSet="img_piano_sizes.srcSet"
-          :src="img_piano_sizes.src"
-          alt="piano"
-        /> -->
-
-        <!-- <img
-          :srcSet="img_grapes_thumnail_sizes.srcSet"
-          :src="img_grapes_thumnail_sizes.src"
-          alt="grapes-thumnail"
-        /> -->
         <ResponsiveImage :images="img_grapes_thumnail_sizes.images" alt="grapes-thumnail"/>
         <h4>
           I approach every project with passion and dedication, applying
