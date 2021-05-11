@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "generate": "nuxt generate",
+    "generate": "nuxt generate --modern",
     "deploy": "scp -r ./dist siyu:/home/pi/work/static-servers/hello"
   },
   "dependencies": {
