@@ -10,10 +10,10 @@
 
       <h4 class="mt-auto pt-4 mb-0.5">Stack:</h4>
       <h4 v-for="tech in stack" :key="tech.name" class="flex justify-between">
-        <span class="font-bold">{{tech.name}}</span>
-        <h6 class="text-right">{{tech.description}}</h6>
+        <span class="font-bold">{{ tech.name }}</span>
+        <h6 class="text-right">{{ tech.description }}</h6>
       </h4>
-      
+
       <div class="pt-4 pb-1 text-right">
         <button
           v-for="link in links"
@@ -29,7 +29,9 @@
             '-400'
           "
         >
-          <a :href="link.url"><h5>{{ link.name }}</h5></a>
+          <a :href="link.url"
+            ><h5>{{ link.name }}</h5></a
+          >
         </button>
       </div>
     </div>
@@ -40,10 +42,10 @@
 export default {
   props: ["color", "stack", "links"],
   mounted() {
-    this.$el.getElementsByTagName("b").forEach((el) => {
+    for (const el of this.$el.getElementsByTagName("b")) {
       el.classList.add("bg-" + this.color + "-300");
       el.classList.add("bg-opacity-50");
-    });
+    }
   },
 };
 </script>
@@ -55,6 +57,6 @@ export default {
 
 .card-container:hover .emoji {
   animation-name: bounce;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
 }
 </style>
