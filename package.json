@@ -7,21 +7,17 @@
     "generate": "nuxt generate --modern",
     "deploy": "scp -r ./dist siyu:/home/pi/work/static-servers/hello"
   },
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "nuxt": "^2.14.6"
-  },
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "^4.0.1",
+    "nuxt": ">=2.15.3",
+    "postcss": "^8.2.8",
     "@aceforth/nuxt-optimized-images": "^1.4.0",
-    "@nuxtjs/tailwindcss": "^3.1.0",
     "autoprefixer": "^9",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.1",
     "imagemin-svgo": "^8.0.0",
     "lqip-loader": "^2.2.1",
-    "postcss": "^7",
     "responsive-loader": "^2.3.0",
-    "sharp": "^0.27.0",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "sharp": "^0.27.0"
   }
 }
