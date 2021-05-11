@@ -78,35 +78,69 @@
         ]
     },
     {
-        "name": "Dango",
-        "description": "My personal crappy <b>\"NETFLIX-like\" website</b> for streaming movies from my home's NAS server 📺",
-        "definition": "A Japanese sweet dumpling made from rice flour and served on a skewer.",
-        "emoji": "🍡",
-        "color": "red",
+        "name": "Nexon",
+        "definition": "Showcase project",
+        "description": "I was really inspired by a website <b>mockup</b> I saw on Instagram and decided to <b>bring it to life</b> 🎉",
+        "emoji": "🔮",
+        "color": "purple",
         "stack": [
             {
                 "name": "Nuxt.js",
-                "description": "Server Side Rendering"
+                "description": "Static content generation"
             },
             {
                 "name": "Tailwind CSS",
                 "description": "Style Framework"
+            },
+            {
+                "name": "Yeetify",
+                "description": "Web Server"
             }
         ],
         "links": [
             {
                 "name": "GitHub",
-                "url": "https://github.com/tinawng/dango"
+                "url": "https://github.com/tinawng/nexon"
             },
             {
                 "name": "Live",
-                "url": "https://dango.tina.cafe"
+                "url": "https://nexon.tina.cafe"
+            }
+        ]
+    },
+    {
+        "name": "Kumo",
+        "description": "Putting hardware synthesizer in the cloud using <b> Web Socket, Web Worker, Web MIDI </b> and other very cool techs 🚀",
+        "emoji": "☁️",
+        "color": "gray",
+        "stack": [
+            {
+                "name": "Nuxt.js",
+                "description": "Static content generation"
+            },
+            {
+                "name": "Tailwind CSS",
+                "description": "Style Framework"
+            },
+            {
+                "name": "Yeetify",
+                "description": "Web Server"
+            }
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tinawng/kumo"
+            },
+            {
+                "name": "Live",
+                "url": "https://kumo.tina.cafe"
             }
         ]
     },
     {
         "name": "Tanabata",
-        "description": "My all-in-one <b>REST API</b>. Used for <b>auth & data provision</b> on almost all my others projects. <br/>Also has extra features✨ like video downloading (using youtube-dl), external data storage (via Firebase)",
+        "description": "My all-in-one <b>REST API</b>. Used for authentification, retrieving data from Mongo, video downloading (using youtube-dl), external data storage (via Firebase) <b>and more</b> ✨",
         "definition": "A type of wish tree on which people hang wishes written on paper and other decorations during Tanabata, a Japanese festival.",
         "emoji": "🎋",
         "color": "green",
@@ -132,29 +166,29 @@
         ]
     },
     {
-        "name": "Grapes",
-        "description": "My take on Arturia website with a simple, light & minimalist approach.",
-        "definition": "",
-        "emoji": "🍇",
-        "color": "purple",
+        "name": "Dango",
+        "description": "My personal crappy <b>\"NETFLIX-like\" website</b> for streaming movies from my home's NAS server 📺",
+        "definition": "A Japanese sweet dumpling made from rice flour and served on a skewer.",
+        "emoji": "🍡",
+        "color": "red",
         "stack": [
             {
-                "name": "Gridsome",
-                "description": "Static content generation"
+                "name": "Nuxt.js",
+                "description": "Server Side Rendering"
             },
             {
                 "name": "Tailwind CSS",
                 "description": "Style Framework"
-            },
-            {
-                "name": "Yeetify",
-                "description": "Web Server"
             }
         ],
         "links": [
             {
                 "name": "GitHub",
-                "url": "https://github.com/tinawng/grapes"
+                "url": "https://github.com/tinawng/dango"
+            },
+            {
+                "name": "Live",
+                "url": "https://dango.tina.cafe"
             }
         ]
     }
