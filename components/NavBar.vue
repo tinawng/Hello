@@ -1,21 +1,23 @@
 <template>
-  <section class="nav_bar__container">
-    <transition name="slide-fade">
-      <div v-if="show_nav" class="nav_bar__links">
-        <h4 @click="scrollTo('hero')">About</h4>
-        <h4 @click="scrollTo('projects')">Projects</h4>
-        <h4 @click="scrollTo('footer')">Links</h4>
+  <section>
+    <div class="z-50 nav-container flex-center-y justify-end">
+      <transition name="slide-fade">
+        <div v-if="show_nav" class="w-full flex justify-end mr-4">
+          <h4 @click="scrollTo('hero')">About</h4>
+          <h4 @click="scrollTo('projects')">Projects</h4>
+          <h4 @click="scrollTo('footer')">Links</h4>
+        </div>
+      </transition>
+      <div
+        class="burger-container flex-vertical-center-y items-end"
+        @click="show_nav = !show_nav"
+      >
+        <span class="w-5" :class="[show_nav ? 'mb-0' : 'mb-1.5']"></span>
+        <span
+          class="w-3 parent-hover:w-5"
+          :class="{ 'opacity-0': show_nav }"
+        ></span>
       </div>
-    </transition>
-    <div
-      class="nav_bav__burger"
-      @click="show_nav = !show_nav"
-    >
-      <span class="w-5" :class="[show_nav ? 'mb-0' : 'mb-1.5']"></span>
-      <span
-        class="w-3 parent-hover:w-5"
-        :class="{ 'opacity-0': show_nav }"
-      ></span>
     </div>
   </section>
 </template>
@@ -28,38 +30,32 @@ export default {
   methods: {
     scrollTo(section_name) {
       var el = this.$parent.$parent.$el.getElementsByClassName(section_name)[0];
-      el.scrollIntoView({ behavior: "smooth" });
-    },
-  },
+      el.scrollIntoView({behavior: "smooth"});
+    }
+  }
 };
 </script>
 
 <style lang="postcss" scoped>
-.nav_bar__container {
+.nav-container {
   @apply h-32;
-  @apply flex justify-end items-center;
 }
-
-.nav_bar__links {
-  @apply w-full flex justify-end mr-4;
-}
-.nav_bar__links h4 {
+.nav-container h4 {
   @apply mx-4;
   @apply cursor-pointer;
 }
 
-.nav_bav__burger {
+.burger-container {
   @apply h-full;
-  @apply flex flex-col justify-center items-end;
   @apply cursor-pointer;
 }
-.nav_bav__burger span {
+.burger-container span {
   height: 2px;
   @apply bg-steel-800;
   transition: all 0.4s;
   transition-property: margin, width, opacity;
 }
-.nav_bav__burger:hover .parent-hover\:w-5 {
+.burger-container:hover .parent-hover\:w-5 {
   @apply w-5;
 }
 </style>
