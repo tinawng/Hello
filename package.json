@@ -5,11 +5,11 @@
   "scripts": {
     "dev": "nuxt",
     "generate": "nuxt generate --modern",
-    "deploy": "scp -r ./dist siyu:/home/pi/work/static-servers/hello"
+    "deploy": "ssh siyu \"(cd /home/pi/work/static-servers/hello && rm -rf dist/)\" && scp -r ./dist siyu:/home/pi/work/static-servers/hello && ssh siyu \"(cd /home/pi/work/static-servers/hello && yarn compress && pm2 restart 'hello')\""
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^4.0.1",
-    "nuxt": ">=2.15.3",
+    "nuxt": "^2.15.3",
     "postcss": "^8.2.8",
     "@aceforth/nuxt-optimized-images": "^1.4.0",
     "autoprefixer": "^9",
