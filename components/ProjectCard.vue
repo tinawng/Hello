@@ -29,7 +29,7 @@
             '-400'
           "
         >
-          <a :href="link.url"
+          <a :href="link.url" target="_blank"
             ><h5>{{ link.name }}</h5></a
           >
         </button>
