@@ -1,13 +1,14 @@
 [
     {
         "name": "Hello",
-        "description": "Your're looking at it! A <b>static website</b> to present me & my projects 💁‍♀️",
+        "definition": "",
+        "description": "Your're looking at it! A <b>static website</b> to present me & my projects 💁‍♀️ <br> (with build-in image compression!)",
         "emoji": "👋",
         "color": "orange",
         "stack": [
             {
                 "name": "Nuxt.js",
-                "description": "Static content generation"
+                "description": "Static Website Generation"
             },
             {
                 "name": "Tailwind CSS",
@@ -30,24 +31,6 @@
         ]
     },
     {
-        "name": "Yeetify",
-        "description": "A super duper lightweight, fully cached, with asynchronous logging & compression support, <b>static web server</b> using raw NodeJS ⚡",
-        "emoji": "💨",
-        "color": "steel",
-        "stack": [
-            {
-                "name": "Node.js",
-                "description": "Runtime"
-            }
-        ],
-        "links": [
-            {
-                "name": "GitHub",
-                "url": "https://github.com/tinawng/yeetify"
-            }
-        ]
-    },
-    {
         "name": "Chill",
         "description": "A small one week project whose goal was to create a <b>music player</b> of endless chill music flow with very <b>sleek & minimalist design</b> 🎵",
         "emoji": "☕",
@@ -55,7 +38,7 @@
         "stack": [
             {
                 "name": "Nuxt.js",
-                "description": "Static content generation"
+                "description": "Static Website Generation"
             },
             {
                 "name": "Tailwind CSS",
@@ -78,6 +61,100 @@
         ]
     },
     {
+        "name": "Blog",
+        "description": "It starts with me playing around with <b>headless CMS</b>, it ends with me having a <b>blog</b> 📃",
+        "emoji": "✏️",
+        "color": "pink",
+        "stack": [
+            {
+                "name": "Nuxt Content",
+                "description": "Static content generation"
+            },
+            {
+                "name": "Tailwind CSS",
+                "description": "Style Framework"
+            },
+            {
+                "name": "Yeetify",
+                "description": "Web Server"
+            }
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tinawng/blog"
+            },
+            {
+                "name": "Live",
+                "url": "https://blog.tina.cafe/"
+            }
+        ]
+    },
+    {
+        "name": "Watch Ash Fly",
+        "description": "A <b>one-page</b> website for some quick <b>stats overview</b> about <a class='underline' href='https://twitter.com/muratpak' target='_blank'>Pak</a>'s ASH crypto-coin",
+        "emoji": "🔥",
+        "color": "red",
+        "stack": [
+            {
+                "name": "Nuxt.js",
+                "description": "Static Website Generation"
+            },
+            {
+                "name": "Tailwind CSS",
+                "description": "Style Framework"
+            },
+            {
+                "name": "Yeetify",
+                "description": "Web Server"
+            }
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tinawng/WatchAshFly"
+            },
+            {
+                "name": "Live",
+                "url": "https://watchashfly.tina.cafe/"
+            }
+        ]
+    },
+    {
+        "name": "Merge",
+        "description": "A big statistics <b>dashboard</b> for the <a class='underline' href='https://www.artnews.com/art-news/news/pak-merge-nft-sale-nifty-gateway-1234612436/' target='_blank'>Merge NFT</a>. <br> Featuring latest token sales, leaderboard, and all kinds of other stats about the NFT <a class='underline' href='https://niftygateway.com/collections/pakmerge' target='_blank'>specific mechanism</a>",
+        "emoji": "🔵",
+        "color": "blue",
+        "stack": [
+            {
+                "name": "Nuxt.js",
+                "description": "Static Website Generation"
+            },
+            {
+                "name": "Tailwind CSS",
+                "description": "Style Framework"
+            },
+            {
+                "name": "Yeetify",
+                "description": "Web Server"
+            },
+            {
+                "name": "Tanabata",
+                "description": "REST API"
+            }
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tinawng/Merge"
+            },
+            {
+                "name": "Live",
+                "url": "https://merge.tina.cafe/"
+            }
+        ]
+    },
+    {
         "name": "Nexon",
         "definition": "Showcase project",
         "description": "I was really inspired by a website <b>mockup</b> I saw on Instagram and decided to <b>bring it to life</b> 🎉",
@@ -86,7 +163,7 @@
         "stack": [
             {
                 "name": "Nuxt.js",
-                "description": "Static content generation"
+                "description": "Static Website Generation"
             },
             {
                 "name": "Tailwind CSS",
@@ -109,6 +186,25 @@
         ]
     },
     {
+        "name": "Yeetify",
+        "definition": "Yeeeeeet !!",
+        "description": "A super duper lightweight, fully cached, with asynchronous logging & compression support, <b>static web server</b> using raw NodeJS ⚡",
+        "emoji": "💨",
+        "color": "steel",
+        "stack": [
+            {
+                "name": "NodeJS",
+                "description": "Runtime"
+            }
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tinawng/yeetify"
+            }
+        ]
+    },
+    {
         "name": "Kumo",
         "description": "Putting hardware synthesizer in the cloud using <b> Web Socket, Web Worker, Web MIDI </b> and other very cool techs 🚀",
         "emoji": "☁️",
@@ -116,7 +212,7 @@
         "stack": [
             {
                 "name": "Nuxt.js",
-                "description": "Static content generation"
+                "description": "Static Website Generation"
             },
             {
                 "name": "Tailwind CSS",
@@ -131,16 +227,12 @@
             {
                 "name": "GitHub",
                 "url": "https://github.com/tinawng/kumo"
-            },
-            {
-                "name": "Live",
-                "url": "https://kumo.tina.cafe"
             }
         ]
     },
     {
         "name": "Tanabata",
-        "description": "My all-in-one <b>REST API</b>. Used for authentification, retrieving data from Mongo, video downloading (using youtube-dl), external data storage (via Firebase) <b>and more</b> ✨",
+        "description": "My all-in-one <b>REST API</b>. Used for authentification, data storage with MongoDB, video downloading (using youtube-dl), external data storage (via Firebase) <b>and more</b> ✨",
         "definition": "A type of wish tree on which people hang wishes written on paper and other decorations during Tanabata, a Japanese festival.",
         "emoji": "🎋",
         "color": "green",
@@ -155,13 +247,91 @@
             },
             {
                 "name": "JWT & Bcrypt",
-                "description": "Authentification"
+                "description": "Auth"
             }
         ],
         "links": [
             {
                 "name": "GitHub",
                 "url": "https://github.com/tinawng/tanabata"
+            }
+        ]
+    },
+    {
+        "name": "Contrast",
+        "description": "A web app for blind <b>A/B audio listening comparison</b>. <br> Upload your samples, create a test case, allow specific user, reviews & notations support, ... ",
+        "emoji": "🔘",
+        "color": "zinc",
+        "stack": [
+            {
+                "name": "Nuxt.js",
+                "description": "Static Website Generation"
+            },
+            {
+                "name": "Tailwind CSS",
+                "description": "Style Framework"
+            },
+            {
+                "name": "Yeetify",
+                "description": "Web Server"
+            },
+            {
+                "name": "Tanabata",
+                "description": "REST API"
+            }
+        ],
+        "links": [
+            {
+                "name": "Instagram",
+                "url": "https://www.instagram.com/p/CSM43wsMvT2/"
+            }
+        ]
+    },
+    {
+        "name": "Gloss",
+        "description": "A quick <b>traffic dashboard</b> for all my websites, based on the web servers logs. <br> Also my first run with ViteJS",
+        "emoji": "💄",
+        "color": "pink",
+        "stack": [
+            {
+                "name": "ViteJS",
+                "description": "Static Website Generation"
+            },
+            {
+                "name": "Tailwind CSS",
+                "description": "Style Framework"
+            },
+            {
+                "name": "Yeetify",
+                "description": "Web Server"
+            }
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tinawng/gloss"
+            }
+        ]
+    },
+    {
+        "name": "Mass Telescope",
+        "description": "An <b>API scraper</b> to gather every Merge NFT token's metadata and put them in a database",
+        "emoji": "🔭",
+        "color": "purple",
+        "stack": [
+            {
+                "name": "NodeJS",
+                "description": "Runtime"
+            },
+            {
+                "name": "Tanabata",
+                "description": "REST API"
+            }
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tinawng/mass-telescope"
             }
         ]
     },
@@ -185,10 +355,6 @@
             {
                 "name": "GitHub",
                 "url": "https://github.com/tinawng/dango"
-            },
-            {
-                "name": "Live",
-                "url": "https://dango.tina.cafe"
             }
         ]
     }
