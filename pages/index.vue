@@ -92,14 +92,15 @@
             <h2 class="mt-4">Siyu</h2>
             <h3 class="mt-6">Specs:</h3>
             <h4 class="mt-0.5">
-              Raspberry Pi 4 <br />4 Cores ~ 4GB RAM <br />
+              Raspberry Pi 4B <br />
+              4 Cores ~ 4GB RAM <br />
+              Ubuntu 20.04 LTS aarch64 <br />
               16GB SD Card
             </h4>
             <h3 class="mt-4">Stack:</h3>
             <h4 class="mt-0.5">
-              💨 Yeetify instance for 👋 Hello static website <br />
-              💨 Yeetify instance for 🍇 Grapes static website <br />
-              🍡 Dango SSR Nuxt Server <br />
+              💨 x10 Yeetify Instances <br />
+              🔀 HAProxy reverse proxy <br />
               🤖 Siyu's Disord Bot <br />
             </h4>
           </div>
@@ -117,8 +118,9 @@
             <h2 class="mt-6">Latte</h2>
             <h3 class="mt-6">Specs:</h3>
             <h4 class="mt-0.5">
-              Raspberry Pi 4 <br />
+              Raspberry Pi 4B <br />
               4 Cores ~ 4GB RAM <br />
+              Ubuntu 20.04 LTS aarch64 <br />
               4x1To SSD
             </h4>
             <h3 class="mt-4">Stack:</h3>
