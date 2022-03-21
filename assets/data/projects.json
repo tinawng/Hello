@@ -2,7 +2,7 @@
     {
         "name": "Hello",
         "definition": "",
-        "description": "Your're looking at it! A <b>static website</b> to present me & my projects 💁‍♀️ <br> (with build-in image compression!)",
+        "description": "Your're looking at it! A <b>static website</b> to present me & my projects 💁‍♀️ <br> (with built-in image compression!)",
         "emoji": "👋",
         "color": "orange",
         "stack": [
