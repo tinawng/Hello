@@ -6,31 +6,24 @@
     </section>
 
     <section ref="hero" class="hero">
-      <div
-        class="grid grid-flow-row-2 lg:grid-cols-2 gap-4 lg:gap-8 xl:gap-y-16 items-center"
-      >
-        <ResponsiveImage :images="img_tina_sizes.images" alt="tina"/>
+      <div class="grid grid-flow-row-2 lg:grid-cols-2 gap-4 lg:gap-8 xl:gap-y-16 items-center">
+        <ResponsiveImage :images="img_tina_sizes.images" alt="tina" />
         <h4>
-          <h2 class="mb-2 text-left">
-            I'm a Jamstack developer, UI designer and Music Lover
-          </h2>
-          I've been in love with web development since my very first experiments
-          with it. I'm very passionate and enthusiastic about using technology
-          to solve my life's problems and ambitions, and not to mention, I
-          really like a good cup of cafe ☕️ while listening to some of my
-          favorite albums 🎵.
+          <h2 class="mb-2 text-left">I'm a Jamstack developer, UI designer and Music Lover</h2>
+          I've been in love with web development since my very first experiments with it. I'm very passionate and
+          enthusiastic about using technology to solve my life's problems and ambitions, and not to mention, I really
+          like a good cup of cafe ☕️ while listening to some of my favorite albums 🎵.
         </h4>
 
         <h4 class="row-start-4 lg:row-start-auto lg:text-right">
-          This passion for music comes with my joy of playing piano (for almost
-          20years now 💪), which ultimatly led me to my first job 🎉.
+          This passion for music comes with my joy of playing piano (for almost 20years now 💪), which ultimatly led me
+          to my first job 🎉.
         </h4>
-        <ResponsiveImage :images="img_piano_sizes.images" alt="piano"/>
-        <ResponsiveImage :images="img_grapes_thumnail_sizes.images" alt="grapes-thumnail"/>
+        <ResponsiveImage :images="img_piano_sizes.images" alt="piano" />
+        <ResponsiveImage :images="img_grapes_thumnail_sizes.images" alt="grapes-thumnail" />
         <h4>
-          I approach every project with passion and dedication, applying
-          meticulous detail 🎨, skills and craftsmanship to every stage of my
-          creating process ✨.
+          I approach every project with passion and dedication, applying meticulous detail 🎨, skills and craftsmanship
+          to every stage of my creating process ✨.
         </h4>
       </div>
     </section>
@@ -49,18 +42,12 @@
             <template v-slot:name>{{ project.name }}</template>
             <template v-slot:emoji>{{ project.emoji }}</template>
             <template v-slot:definition>{{ project.definition }}</template>
-            <template v-slot:description
-              ><span v-html="project.description"></span
-            ></template>
+            <template v-slot:description><span v-html="project.description"></span></template>
           </project-card>
           <div class="mt-10 xl:mt-0 flex-vertical-center">
             <h3 class="text-lg xl:text-2xl">And many more...</h3>
-            <button
-              class="mt-4 px-4 py-3 bg-steel-700 hover:bg-steel-500 active:bg-steel-700"
-            >
-              <a href="https://github.com/tinawng/"
-                ><h4>visit my GitHub 🚀</h4></a
-              >
+            <button class="mt-4 px-4 py-3 bg-steel-700 hover:bg-steel-500 active:bg-steel-700">
+              <a href="https://github.com/tinawng/"><h4>visit my GitHub 🚀</h4></a>
             </button>
           </div>
         </div>
@@ -70,9 +57,7 @@
     <section class="backend">
       <div>
         <h2><b>⚗️ My Backend</b></h2>
-        <div
-          class="mt-10 grid grid-cols md:grid-cols-2 gap-16 md:gap-0 justify-center"
-        >
+        <div class="mt-10 grid grid-cols md:grid-cols-2 gap-16 md:gap-0 justify-center">
           <div class="flex-vertical-center-x text-center">
             <svg
               viewBox="0 0 24 24"
@@ -105,12 +90,7 @@
             </h4>
           </div>
           <div class="flex-vertical-center-x text-center">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
               <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
               <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
@@ -136,10 +116,7 @@
 
     <section class="footer">
       <div class="grid grid-cols-3 gap-8 md:gap-0">
-        <a
-          href="https://www.instagram.com/tina_likes_cafe/"
-          class="flex-vertical-center"
-        >
+        <a href="https://twitter.com/ItsTinaWang" target="_blank" class="flex-vertical-center">
           <svg
             viewBox="0 0 24 24"
             fill="none"
@@ -148,16 +125,14 @@
             stroke-linecap="round"
             stroke-linejoin="round"
           >
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            <path
+              d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+            ></path>
           </svg>
-          <h3>instagram</h3>
+          <h3>twitter</h3>
         </a>
-        <a
-          href="https://github.com/tinawng"
-          class="flex-vertical-center"
-        >
+
+        <a href="https://github.com/tinawng" target="_blank" class="flex-vertical-center">
           <svg
             viewBox="0 0 24 24"
             fill="none"
@@ -172,7 +147,7 @@
           </svg>
           <h3>github</h3>
         </a>
-        <a href="mailto:hello@tina.cafe" class="flex-vertical-center">
+        <a href="https://www.instagram.com/tina_likes_cafe/" target="_blank" class="flex-vertical-center">
           <svg
             viewBox="0 0 24 24"
             fill="none"
@@ -181,10 +156,11 @@
             stroke-linecap="round"
             stroke-linejoin="round"
           >
-            <circle cx="12" cy="12" r="4"></circle>
-            <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
           </svg>
-          <h3>contact</h3>
+          <h3>instagram</h3>
         </a>
       </div>
     </section>
@@ -192,10 +168,10 @@
 </template>
 
 <script>
-import projects from "~/assets/data/projects.json";
-const img_tina_sizes = require("~/assets/img/tina.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=900&format=webp");
-const img_grapes_thumnail_sizes = require("~/assets/img/grapes-thumbnail.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=900&format=webp");
-const img_piano_sizes = require("~/assets/img/piano.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=900&format=webp");
+import projects from "~/assets/data/projects.json"
+const img_tina_sizes = require("~/assets/img/tina.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=900&format=webp")
+const img_grapes_thumnail_sizes = require("~/assets/img/grapes-thumbnail.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=900&format=webp")
+const img_piano_sizes = require("~/assets/img/piano.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=900&format=webp")
 
 export default {
   data() {
@@ -204,9 +180,9 @@ export default {
       img_tina_sizes,
       img_grapes_thumnail_sizes,
       img_piano_sizes,
-    };
+    }
   },
-};
+}
 </script>
 
 <style lang="postcss" scoped>
