@@ -16,7 +16,7 @@
         </h4>
 
         <h4 class="row-start-4 lg:row-start-auto lg:text-right">
-          This passion for music comes with my joy of playing piano (for almost 20years now 💪), which ultimatly led me
+          This passion for music comes with my joy of playing piano (for almost 20years now 💪), which ultimately led me
           to my first job 🎉.
         </h4>
         <ResponsiveImage :images="img_piano_sizes.images" alt="piano" />
